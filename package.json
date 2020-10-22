@@ -1,0 +1,19 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelpianaro/proshop.git"
+  },
+  "author": "Rafael Pianaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelpianaro/proshop/issues"
+  },
+  "homepage": "https://github.com/rafaelpianaro/proshop#readme"
+}
