@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rafaelpianaro/proshop/issues"
   },
-  "homepage": "https://github.com/rafaelpianaro/proshop#readme"
+  "homepage": "https://github.com/rafaelpianaro/proshop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
