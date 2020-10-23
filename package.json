@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server"
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "cliente": "npm start --prefix frontend"
   },
   "repository": {
     "type": "git",
