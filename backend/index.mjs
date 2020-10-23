@@ -1,9 +1,12 @@
 //tentei com modules. precisa colocar no package.json -> "type": "module",
 import express from 'express'
 import dotenv from 'dotenv'
+import connectDB from './config/connection.mjs '
 import products from './data/products.js'
 
 dotenv.config()
+
+connectDB()
 
 const app = express()
 
