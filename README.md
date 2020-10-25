@@ -8,3 +8,14 @@ to run both
 
 to run backend
 ### `npm run sever`
+
+### `anotações`
+criação do server<br />
+node --experimental-modules index.mjs<br />
+criação do seeder<br />
+node --experimental-modules --es-module-specifier-resolution=node seeder.mjs<br />
+
+
+### Author
+
+* **Rafael Pianaro - *Fullstack Developer*** 
