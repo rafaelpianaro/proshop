@@ -5,12 +5,15 @@ import { notFound, errorHandler } from './middleware/errorMiddleware.mjs'
 import connectDB from './config/connection.mjs '
 
 import productRoutes from './routes/productRoutes.mjs'
+import userRoutes from './routes/userRoutes.mjs'
 
 dotenv.config()
 
 connectDB()
 
 const app = express()
+
+app.use(express.json())
 
 // app.use((req, res, next) => {
 //     console.log('req', req.originalUrl)
@@ -22,6 +25,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/products', productRoutes)
+app.use('/api/users', userRoutes)
 
 app.use(notFound)
 
