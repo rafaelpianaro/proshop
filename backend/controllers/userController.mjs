@@ -145,18 +145,17 @@ const getUserById = asyncHandler(async(req,res) => {
     }
 })
 
-// @desc    Get user
+// @desc    Update user
 // @route   PUT /api/users/:id
 // @access  Private/Admin
 const updateUser = asyncHandler(async(req,res) => {
-    console.log('aquiii')
     const user = await User.findById(req.params.id)
+    // console.log('user', user)
 
     if(user){
         user.name = req.body.name || user.name
         user.email = req.body.email || user.email
         user.isAdmin = req.body.isAdmin
-        // console.log(user.isAdmin)
 
         const updatedUser = await user.save()
 
@@ -167,7 +166,6 @@ const updateUser = asyncHandler(async(req,res) => {
             isAdmin: updatedUser.isAdmin
         })
     }else {
-        console.log('404 aquiii')
         res.status(404)
         throw new Error('User not found')
     }
