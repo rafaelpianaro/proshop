@@ -70,7 +70,7 @@ const OrderScreen = ({match,history}) => {
         //     dispatch(getOrderDetails(orderId))
         // }
     // }, [order, orderId])
-    }, [dispatch, orderId, successPay, successDeliver, order])
+    }, [dispatch, orderId, successPay, successDeliver, order, history, userInfo])
 
     const successPaymentHandler = (paymentResult) => {
         console.log(paymentResult)
